@@ -1,17 +1,25 @@
 import React from "react";
-export default function Pet({ name, animal, breed }) {
-  // return React.createElement("div", {}, [
-  //   React.createElement("h1", {}, name),
-  //   React.createElement("h2", {}, animal),
-  //   React.createElement("h2", {}, breed)
-  // ]);
-  //Below will do the same thing as the commented out section..
-//You can run Javascript here, needs to be one line, ternarys work.
+import { Link } from "@reach/router";
+
+const Pet = props => {
+  const { name, animal, breed, media, location, id } = props;
+
+  let hero = "http://placecorgi.com/300/300";
+  if (media.length) {
+    hero = media[0].small;
+  }
+
   return (
-    <div>
-      <h1>{name.toUpperCase()}</h1>
-      <h2>{animal}</h2>
-      <h2>{breed + breed}</h2>
-    </div>
-  )
+    <Link to={`/details/${id}`} className="pet">
+      <div className="image-container">
+        <img src={hero} alt={name} />
+      </div>
+      <div className="info">
+        <h1>{name}</h1>
+        <h2>{`${animal} — ${breed} — ${location}`}</h2>
+      </div>
+    </Link>
+  );
 };
+
+export default Pet;

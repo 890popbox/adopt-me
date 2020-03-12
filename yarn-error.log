@@ -1,0 +1,60 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @reach/router
+
+PATH: 
+  C:\Users\chris\AppData\Roaming\npm\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\chris\Desktop\adopt-me\node_modules\.bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\chris\AppData\Local\Programs\Python\Python38\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Git\bin\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ffmpeg\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\chris\AppData\Local\Programs\Python\Python38\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ffmpeg\bin;C:\Program Files (x86)\GitHub CLI\
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  12.14.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\chris\Desktop\adopt-me\node_modules\deasync\bin\win32-x64-node-12\deasync.node'
+
+npm manifest: 
+  {
+    "name": "adopt-me",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "dev": "parcel src/index.html",
+      "dev:mock": "cross-env PET_MOCK=mock parcel src/index.html",
+      "format": "prettier \"src/**/*.{js,html,css}\" --write",
+      "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Chris",
+    "license": "ISC",
+    "devDependencies": {
+      "babel-eslint": "^10.1.0",
+      "cross-env": "^7.0.2",
+      "eslint": "^6.8.0",
+      "eslint-config-prettier": "^6.10.0",
+      "eslint-plugin-import": "^2.20.1",
+      "eslint-plugin-jsx-a11y": "^6.2.3",
+      "eslint-plugin-react": "^7.19.0",
+      "eslint-plugin-react-hooks": "^2.5.0",
+      "parcel-bundler": "^1.12.4",
+      "prettier": "^1.17.0"
+    },
+    "dependencies": {
+      "react": "^16.13.0",
+      "react-dom": "^16.13.0"
+    },
+    "browserslist": [
+      "last 2 Chrome versions"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
